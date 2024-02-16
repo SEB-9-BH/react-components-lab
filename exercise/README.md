@@ -19,7 +19,7 @@ const weatherForecasts = [
   {
     img:
       'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/stormy.svg',
-    condtions: 'stormy',
+    conditions: 'stormy',
     time: 'all day'
   },
   {
@@ -54,6 +54,32 @@ Each instance of the WeatherForecast component will use the following HTML conte
       <p><span>time:</span> day</p>
     </div>
 ```
+
+At the `App.jsx` level, add a `<section>` tag that will surround all of the WeatherForecast elements. We'll need it for the CSS.
+
+## WeatherForecast CSS
+
+Create a `WeatherForecast.css` file and add the following style rules to it:
+```css
+section {
+    display:flex;
+}
+  
+section .weather {
+   border: 1px solid #ccc;
+   flex: 1;
+   padding:10px;
+   text-align:center;
+}
+  
+.weather span {
+    font-weight: bold;
+}
+```
+
+Be sure to import this stylesheet at the top of your WeatherForecast component file!
+
+## Main Objective
 
 Our goal is to loop over the weatherForecasts array and, for each object, display an instance of the WeatherForecast component displaying that object's data.
 
