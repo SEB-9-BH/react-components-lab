@@ -1,11 +1,69 @@
 # ![React Components Lab - Exercise](./assets/hero.png)
 
-This lab should be based on the following content:
+In this lab, you'll build a weather forecast page that re-uses a single component to display multiple days' worth of weather forecasts.
 
-Make any necessary updates, but keep true to the existing content. 
+For the forecast data, copy the following array into your `App.jsx` file:
 
-https://seir-222-sasquatch.netlify.app/react-fundamentals/week-10/day-3/labs/react-weather-forecast/
+```js
+const weatherForecasts = [
+  {
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg',
+    conditions: 'sunny',
+    time: 'day'
+  },
+  {
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/night.svg',
+    conditions: 'clear',
+    time: 'night'
+  },
+  {
+    img:
+      'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/stormy.svg',
+    condtions: 'stormy',
+    time: 'all day'
+  },
+  {
+    img:
+      'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-day_t7ckxp.svg',
+    conditions: 'overcast',
+    time: 'day'
+  },
+  {
+    img:
+      'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-night.svg',
+    conditions: 'its dark, can you really tell?',
+    time: 'night'
+  }
+];
+```
 
-Starter code : https://codesandbox.io/p/sandbox/rctr-9-8-20-weathericons-starter-mhive
+## Component Hierarchy
 
-Grab that starter code from code sandbox and make a repo that we own with it. 
+You will be implementing the following component diagram in your app:
+
+![App component with three children components](./assets/react-weather-hierarchy.png)
+
+## WeatherForecast HTML
+
+Each instance of the WeatherForecast component will use the following HTML content:
+
+```html
+    <div class="weather">
+      <img src="http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg" alt="">
+      <p><span>conditions:</span> sunny</p>
+      <p><span>time:</span> day</p>
+    </div>
+```
+
+Our goal is to loop over the weatherForecasts array and, for each object, display an instance of the WeatherForecast component displaying that object's data.
+
+## Bonus
+
+React Components can almost always be broken down into even smaller, more modular components! Try creating the following additional Components:
+
+WeatherIcon - contains only the img
+WeatherData - contains both the conditionsand time
+
+This version will have the following component tree:
+
+![App component with three generations of children components](./assets/react-bonus-weather-hierarchy.png)
