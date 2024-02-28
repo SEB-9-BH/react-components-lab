@@ -10,6 +10,8 @@ You will be implementing the following component diagram in your app:
 
 ![App component with three children components](./assets/react-weather-hierarchy.png)
 
+[tktk can we rm spelling highlighter in snapshot?]
+
 ### Starting Code
 
 For the forecast data, copy the following array into your `App.jsx` file:
@@ -59,7 +61,7 @@ Each instance of the WeatherForecast component will use the following HTML conte
     </div>
 ```
 
-At the `App.jsx` level, add a `<section>` tag that will surround all of the WeatherForecast elements. We'll need it for the CSS.
+At the `App.jsx` level, add a `<section>` tag that will surround all of the `WeatherForecast` elements. We'll need it for the CSS.
 
 #### WeatherForecast CSS
 
@@ -82,18 +84,18 @@ section .weather {
 }
 ```
 
-Be sure to import this stylesheet at the top of your WeatherForecast component file!
+Be sure to import this stylesheet at the top of your `WeatherForecast` component file!
 
 ## Main Objective
 
-In this lab, you will create a new React app that displays a series of weather forecasts. You will create a WeatherForecast component that will be used to display each forecast.
+In this lab, you will create a new React app that displays a series of `WeatherForecast` components, which will be used to display each forecast.
 
 ## Bonus
 
 React Components can almost always be broken down into even smaller, more modular components! Try creating the following additional Components:
 
 WeatherIcon - contains only the img
-WeatherData - contains both the conditionsand time
+WeatherData - contains both the conditions and time
 
 This version will have the following component tree:
 
