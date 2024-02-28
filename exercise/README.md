@@ -1,6 +1,16 @@
 # ![React Components Lab - Exercise](./assets/hero.png)
 
+## Overview
+
 In this lab, you'll build a weather forecast page that re-uses a single component to display multiple days' worth of weather forecasts.
+
+### Component Hierarchy
+
+You will be implementing the following component diagram in your app:
+
+![App component with three children components](./assets/react-weather-hierarchy.png)
+
+### Starting Code
 
 For the forecast data, copy the following array into your `App.jsx` file:
 
@@ -37,13 +47,7 @@ const weatherForecasts = [
 ];
 ```
 
-## Component Hierarchy
-
-You will be implementing the following component diagram in your app:
-
-![App component with three children components](./assets/react-weather-hierarchy.png)
-
-## WeatherForecast HTML
+#### WeatherForecast HTML
 
 Each instance of the WeatherForecast component will use the following HTML content:
 
@@ -57,9 +61,10 @@ Each instance of the WeatherForecast component will use the following HTML conte
 
 At the `App.jsx` level, add a `<section>` tag that will surround all of the WeatherForecast elements. We'll need it for the CSS.
 
-## WeatherForecast CSS
+#### WeatherForecast CSS
 
 Create a `WeatherForecast.css` file and add the following style rules to it:
+
 ```css
 section {
     display:flex;
@@ -81,7 +86,7 @@ Be sure to import this stylesheet at the top of your WeatherForecast component f
 
 ## Main Objective
 
-Our goal is to loop over the weatherForecasts array and, for each object, display an instance of the WeatherForecast component displaying that object's data.
+In this lab, you will create a new React app that displays a series of weather forecasts. You will create a WeatherForecast component that will be used to display each forecast.
 
 ## Bonus
 
