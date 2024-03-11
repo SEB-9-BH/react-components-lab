@@ -1,4 +1,4 @@
-# ![React Components Lab Setup](./assets/hero.png)
+# ![React Components Lab - Setup](./assets/hero.png)
 
 ## Setup
 

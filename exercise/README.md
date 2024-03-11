@@ -2,19 +2,17 @@
 
 ## Overview
 
-In this lab, you'll build a weather forecast page that re-uses a single component to display multiple days' worth of weather forecasts.
+In this lab, you'll build a weather forecast page that **re-uses a single component** to display multiple days' worth of weather forecasts. You will only need to work with two components to complete this exercise, `src/App.jsx` and `src/WeatherForecast.jsx`. The `<App/>` component will act as our root, while the `<WeatherForecast />` component will be used within `src/App.jsx` to dynamically generate a list of forecasts.
 
-### Component Hierarchy
+Your app should adhere to the following component hierarchy diagram:
 
-You will be implementing the following component diagram in your app:
+![Component hierarchy diagram](./assets/chd-core.png)
 
-![App component with three children components](./assets/react-weather-hierarchy.png)
+> 💡 When content is dynamically generated, we only include the component being 'duplicated' **once** in a component hierarchy diagram.
 
-[tktk can we rm spelling highlighter in snapshot?]
+### Starter code
 
-### Starting Code
-
-For the forecast data, copy the following array into your `App.jsx` file:
+For the forecast data, copy the following array into your `src/App.jsx` file:
 
 ```js
 const weatherForecasts = [
@@ -92,11 +90,13 @@ In this lab, you will create a new React app that displays a series of `WeatherF
 
 ## Bonus
 
-React Components can almost always be broken down into even smaller, more modular components! Try creating the following additional Components:
+React components can almost always be broken down into even smaller, more modular components! 
 
-WeatherIcon - contains only the img
-WeatherData - contains both the conditions and time
+Try creating the following additional components:
+
+- `WeatherIcon` - contains only the `<img>`
+- `WeatherData` - contains both the conditions and time
 
 This version will have the following component tree:
 
-![App component with three generations of children components](./assets/react-bonus-weather-hierarchy.png)
+![Component hierarchy diagram](./assets/chd-level-up.png)
