@@ -82,7 +82,7 @@ At the `App.jsx` level, add a `<section>` tag that will surround all of the `Wea
 </>
 ```
 
-#### WeatherForecast starter CSS
+## WeatherForecast starter CSS
 
 Create a `WeatherForecast.css` file and add the following style rules to it:
 
