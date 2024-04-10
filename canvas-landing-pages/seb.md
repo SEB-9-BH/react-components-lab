@@ -1,1 +1,1 @@
-# ![React Components Lab](./assets/hero.png)
+# ![React Components Lab](../assets/hero.png)
