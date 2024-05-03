@@ -67,7 +67,7 @@ const App = () => {
 export default App
 ```
 
-## Running the development server
+### Running the development server
 
 To start the development server and view our app in the browser, we'll use the following command: 
 
