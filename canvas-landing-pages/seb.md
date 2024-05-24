@@ -14,9 +14,6 @@ Reactville Weather Station is at the heart of the town, keeping everyone informe
 
 In this lab, you will create a user-friendly React application that displays a 5-day weather forecast. Your challenge is to implement a dynamic, component-based structure where you will practice the core concept of passing data using props in React.
 
-## Time to complete
-
-Estimated time to complete core lab exercise: **60 min**
 
 ## Content
 
