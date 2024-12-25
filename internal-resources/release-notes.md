@@ -3,7 +3,7 @@
   <span class="subhead">Release Notes</span>
 </h1>
 
-## Version 1.1 - Dec 25, 2024
+## Version 1.1 - December 25, 2024
 
 ### Release details
 
