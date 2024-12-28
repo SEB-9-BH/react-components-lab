@@ -99,7 +99,7 @@ git add .
 git commit -m "init commit"
 ```
 
-Make a new repository on [GitHub](https://github.com/) named react-components-lab.
+Make a new repository on [GitHub](https://github.com/) named `react-components-lab`.
 
 Link your local project to your remote GitHub repo:
 
