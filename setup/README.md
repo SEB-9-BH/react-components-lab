@@ -88,24 +88,3 @@ You should see that `Vite` is available on port number 5173:
 ```plaintext
 localhost:5173
 ```
-
-### GitHub setup
-
-To add this project to GitHub, initialize a Git repository:
-
-```bash
-git init
-git add .
-git commit -m "init commit"
-```
-
-Make a new repository on [GitHub](https://github.com/) named `react-components-lab`.
-
-Link your local project to your remote GitHub repo:
-
-```bash
-git remote add origin https://github.com/<github-username>/react-components-lab.git
-git push origin main
-```
-
-> 🚨 Do not copy the above command. It will not work. Your GitHub username will replace `<github-username>` (including the `<` and `>`) in the URL above.
